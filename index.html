@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/a7db5df4d1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+    <title>Crystal Game</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <!-- TITLE -->
+        <div class="row title jumbotron">
+            <div class="col-md">
+                <h1>Crystals Collector</h1>
+            </div>
+        </div>
+
+        <div class="row mainbody">
+
+            <!-- WINS/LOSSES TRACKER -->
+            <div class="col-md-6 trackersection">
+                <h3 class="winslosses">Wins: <span id="wins-text">0</span></h3>
+                <h3 class="winslosses">Losses: <span id="losses-text">0</span></h3>
+            </div>
+
+
+            <!-- GAME INSTRUCTIONS -->
+            <div class="col-md mainbodyright">
+                <p>
+                    You will be given a random number at the start of the game.
+                </p>
+                <p>
+                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your
+                    total score.
+                </p>
+                <p>
+                    You win the game by matching your total score to the random number, you lose the game if your total
+                    score goes above the random number.
+                </p>
+                <p>
+                    The value of each crystal is hidden from you until you click on it.
+                </p>
+                <p>
+                    Each time when the game starts, the game will change the valiues of each crystal.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TARGET SCORE & CURRENT SCORE -->
+        <div class="row scores text-center">
+            <div class="col-md-6 jumbotron text-light bg-darks">
+                <div class="targetscore ">
+                    <h2>Target Score</h2>
+                    <h3 class="lead" id="target-score-text">0</h3>
+                </div>
+            </div>
+
+            <div class="col-md jumbotron text-light bg-darks">
+                <div class="currentscore ">
+                    <h2>Current Score</h2>
+                    <h3 class="lead" id="user-score-text">0</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- DIAMOND BUTTONS -->
+        <div class="row" id="diamond-buttons">
+            <div class="col-md-3">
+                <div class="diamond myfade" id="d1">
+                    <img src="assets/images/gem-clipart-rectangle-18.png" alt="a diamond">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="diamond myfade" id="d2">
+                    <img src="assets/images/pink-gem_aT0xMTAwMyZuPTI2Jg.png" alt="another diamond">
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="diamond myfade" id="d3">
+                    <img src="assets/images/EBap51cO.png" alt="yet another diamond">
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="diamond myfade" id="d4">
+                    <img src="assets/images/gem-clipart-rectangle-6.png" alt="you guessed it">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+
+
+</html>

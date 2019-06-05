@@ -1,0 +1,58 @@
+.winslosses{
+    padding: 20px 0;
+}
+
+.title{
+    /* padding: 50px 0;   */
+    color: rgb(25, 41, 56); 
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 10px solid orange;
+}
+
+.mainbody{
+    background: #77a5ee;
+    border-radius: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.mainbodyright{
+    background: #8fb2eb;
+    border-radius: 50px;
+    padding: 20px 10px 20px 40px;
+}
+
+.jumbotron{
+    border-radius: 100px;
+}
+
+.trackersection{
+    padding: 20px 0 20px 40px;
+
+}
+
+.scores{
+    margin-bottom: 5px;
+}
+
+.bg-darks{
+    background: rgb(63, 84, 119);
+}
+ img{
+     /* position: absolute; */
+     width: 200px;
+     height: auto;
+     margin: 0 0 0 30px;
+     /* margin-right: 75px; */
+ }
+ .myfade {
+    opacity: .5;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+ .myfade:hover {
+    opacity: 1;
+}
